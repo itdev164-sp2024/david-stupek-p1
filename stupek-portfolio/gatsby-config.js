@@ -9,10 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Webstupek-Portfolio`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    contact: {
+      name: `David Stupek`,
+      company: `Webstupek LLC`,
+      address: `560 E Elizabeth St Waukesha WI`
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
