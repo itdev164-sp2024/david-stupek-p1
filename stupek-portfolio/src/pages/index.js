@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,6 +14,12 @@ const IndexPage = ({ data }) => (
         data.allContentfulProject.edges.map(edge => (
           <li key={edge.node.id}>
             <Link to={`/project/${edge.node.slug}/`}>{edge.node.title}</Link>
+            <div>
+              <GatsbyImage
+              image={edge.node.heroImage.gatsbyImageData}
+              />
+            </div>
+           
           </li>
         ))
       }
@@ -38,6 +45,10 @@ export const query = graphql`
               id
               title
               slug
+              description
+              heroImage {
+                gatsbyImageData(layout: FIXED, placeholder: DOMINANT_COLOR, width: 300)
+              }
             }
           }
         }

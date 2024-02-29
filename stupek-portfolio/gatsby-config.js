@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -23,8 +27,12 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
+        /*
+        spaceID:`${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
+        */
         spaceId: `gzt868czzsz8`,
-        accessToken: `OMuhSMXW46CoP9RAP3huDBURlDNjT1VdiQkU2xk6eNU`
+        accessToken: `OMuhSMXW46CoP9RAP3huDBURlDNjT1VdiQkU2xk6eNU`        
       }
     },
     `gatsby-plugin-image`,
@@ -35,6 +43,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
