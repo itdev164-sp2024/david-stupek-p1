@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Webstupek-Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A collection of work by David Stupek`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
@@ -20,6 +20,13 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `gzt868czzsz8`,
+        accessToken: `OMuhSMXW46CoP9RAP3huDBURlDNjT1VdiQkU2xk6eNU`
+      }
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
