@@ -19,7 +19,6 @@ const IndexPage = ({ data }) => (
               image={edge.node.heroImage.gatsbyImageData}
               />
             </div>
-           
           </li>
         ))
       }
