@@ -13,14 +13,14 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
       }
     }
-  `)
+  }
+`)
 
   return (
     <>
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          © {new Date().getFullYear()} &middot; Built by David Stupek & 
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>

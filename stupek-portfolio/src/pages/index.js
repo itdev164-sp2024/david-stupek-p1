@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => (
               <GatsbyImage
               image={edge.node.heroImage.gatsbyImageData}
               />
+              <p>{edge.node.description}</p>
             </div>
           </li>
         ))
@@ -41,7 +42,6 @@ export const query = graphql`
         allContentfulProject {
           edges {
             node {
-              id
               title
               slug
               description
