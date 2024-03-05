@@ -23,7 +23,6 @@ const About = ({ data }) => {
                 style={{ marginBottom: `1.45rem`}}
                 />
             </div>
-            <Link to="/">Home</Link>
             </Layout>
     )
 }

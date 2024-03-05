@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
+  color: #353029;
+  background-color: #b74615;
   margin: 0 auto;
   padding: var(--space-4) var(--size-gutter);
   display: flex;
