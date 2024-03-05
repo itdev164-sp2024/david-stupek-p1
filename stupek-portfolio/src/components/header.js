@@ -15,6 +15,7 @@ const StyledHeader = styled.header`
 const StyledLink = styled(Link)`
   font-size: var(--font-sm);
   text-decoration: none;
+  color: ${props => props.theme.header.color};
 `
 
 const Header = ({ siteTitle }) => (
