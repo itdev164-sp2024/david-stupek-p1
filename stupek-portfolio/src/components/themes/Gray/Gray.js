@@ -1,6 +1,7 @@
 const theme = {
     header: {
-        color: '#b74615'
+        color: '#353029'
+        
     },
     body: {
          backgroundColor: '#ffe042'
