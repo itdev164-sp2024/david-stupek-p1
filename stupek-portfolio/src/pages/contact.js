@@ -11,13 +11,14 @@ const Contact = ({ data }) => {
         <Layout>
             <Seo title="Contact US" />
             <h1>Contact WebStupek</h1>
-            <p>Please send all inquires to: </p>
+            <Link to="https://www.linkedin.com/in/david-stupek/">Linked-in</Link>
+            <p>Email to: dstupek@gmail.com</p>
             <div>{company}</div>
             <div>{`ATTN: ${name}`}</div>
             <div>{address}</div>
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`}}>
                 <StaticImage
-                    src="https://i.ibb.co/fNb13fr/Screenshot-2024-02-28-at-9-20-03-PM.png"
+                    src="https://i.ibb.co/r0XRDrW/david-Headshot.jpg" 
                     width={300}
                     quality={95}
                     formats={["auto", "webp", "avif"]}
@@ -25,7 +26,6 @@ const Contact = ({ data }) => {
                     style={{ marginBottom: `1.45rem`}}
                 />
             </div>
-            <Link to="/">Home</Link>
         </Layout>
     )
 }
